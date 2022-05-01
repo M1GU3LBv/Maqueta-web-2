@@ -1,43 +1,61 @@
-.parent {
+body {
+    background-color: black;
+}
+
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 4rem 20rem 4rem 25rem 5rem;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 4rem 20rem 4rem 23rem 4rem 3rem;
+    column-gap: 3px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 5;
-    background-color: rebeccapurple
+.wrapper div {
+    align-items: center;
+    display: flex;
+    padding-left: 50%;
 }
 
-.div2 {
-    grid-area: 2 / 1 / 3 / 5;
-    background-color: orange;
+.one,
+.two,
+.three {
+
+    background-color: greenyellow;
 }
 
-.div3 {
-    grid-area: 3 / 1 / 4 / 5;
-    background-color: skyblue;
-}
-
-.div4 {
-    grid-area: 4 / 1 / 5 / 2;
-    background-color: yellowgreen;
-}
-
-.div5 {
-    grid-area: 4 / 2 / 5 / 3;
+.four,
+.five,
+.six {
     background-color: yellow;
 }
 
-.div6 {
-    grid-area: 4 / 3 / 5 / 4;
-    background-color: red;
+.seven,
+.eight,
+.nine {
+    background-color: skyblue;
 }
 
-.div7 {
-    grid-area: 5 / 1 / 6 / 4;
+.ten,
+.thirteen {
+    background-color: rgb(228, 116, 228);
+
+}
+
+.eleven {
     background-color: blue;
+}
+
+.twelve {
+    background-color: aquamarine;
+}
+
+.fourteen,
+.fiveteen {
+    background-color: orange;
+}
+
+.sixteen,
+.seventeen,
+.eighteen {
+    background-color: red;
 }
